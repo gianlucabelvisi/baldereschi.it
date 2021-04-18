@@ -31,5 +31,9 @@ $theme-colors: (
 //  transition: all .5s ease-in-out;
 //}
 
+.footer {
+  display: flex;
+}
+
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 

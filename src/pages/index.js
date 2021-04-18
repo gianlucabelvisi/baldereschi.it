@@ -2,18 +2,8 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Carousel, Image } from "react-bootstrap"
-
-import slide01 from "../images/projects/slider/1.png"
-import slide02 from "../images/projects/slider/2.png"
-import slide03 from "../images/projects/slider/3.png"
-import slide04 from "../images/projects/slider/4.png"
-import slide05 from "../images/projects/slider/5.png"
-import slide06 from "../images/projects/slider/6.png"
-import slide07 from "../images/projects/slider/7.png"
-import slide08 from "../images/projects/slider/8.png"
-import slide09 from "../images/projects/slider/9.png"
-import slide10 from "../images/projects/slider/10.png"
+import { Carousel } from "react-bootstrap"
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => (
   <Layout>
@@ -21,34 +11,34 @@ const IndexPage = () => (
 
     <Carousel className="mt-3 mb-3">
       <Carousel.Item>
-        <img src={slide01} alt="" />
+        <StaticImage src="../images/projects/slider/1.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide02} alt="" />
+        <StaticImage src="../images/projects/slider/2.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide03} alt="" />
+        <StaticImage src="../images/projects/slider/3.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide04} alt="" />
+        <StaticImage src="../images/projects/slider/4.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide05} alt="" />
+        <StaticImage src="../images/projects/slider/5.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide06} alt="" />
+        <StaticImage src="../images/projects/slider/6.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide07} alt="" />
+        <StaticImage src="../images/projects/slider/7.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide08} alt="" />
+        <StaticImage src="../images/projects/slider/8.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide09} alt="" />
+        <StaticImage src="../images/projects/slider/9.png" alt="Slide"/>
       </Carousel.Item>
       <Carousel.Item>
-        <img src={slide10} alt="" />
+        <StaticImage src="../images/projects/slider/10.png" alt="Slide"/>
       </Carousel.Item>
     </Carousel>
 
@@ -56,4 +46,3 @@ const IndexPage = () => (
 )
 
 export default IndexPage
-

@@ -28,11 +28,12 @@ const Layout = ({ children }) => {
 
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
-      <main className="container">
+      <main style={{display: 'flex'}}  className="justify-content-center">
         {children}
       </main>
 
-      <footer>
+
+      <footer style={{display: 'flex'}} className="justify-content-center mt-5">
         <small>
           © {new Date().getFullYear()}, Built with
           {` `}

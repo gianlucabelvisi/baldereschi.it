@@ -28,7 +28,7 @@ const Menu = () => {
           <Link to="/about">About</Link>
         </li>
         <li className="external">
-          <Link to="https://www.colorcards.it" target="_blank">Colors</Link>
+          <a href="https://www.colorcards.it" target="_blank" rel="noreferrer">Colors</a>
         </li>
       </ul>
 
