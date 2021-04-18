@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+body {
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    //-o-background-size: cover;
+    //background-size: cover;
+    //text-align: center;
+    //font-weight: normal;
+    //font-family: 'Oxygen', "Arial", sans-serif;
+    //background: #ffffff;
+    //font-size: 12px;
+    //line-height: 20px;
+}
+
+
+$font-family-sans-serif: 'Oxygen', "Arial", sans-serif;
+$font-family-serif:      $font-family-sans-serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+
+$theme-colors: (
+  "primary": #444fc7,
+  "secondary": #5967ff
+);
+
+//img {
+//  -o-transition: all .5s ease-in-out;
+//  -webkit-transition: all .5s ease-in-out;
+//  -moz-transition: all .5s ease-in-out;
+//  transition: all .5s ease-in-out;
+//}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+

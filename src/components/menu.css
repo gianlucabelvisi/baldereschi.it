@@ -1,0 +1,53 @@
+.menu {
+    margin-top: 1em;
+}
+
+.highlight * {
+    color: red;
+}
+
+.external * {
+    color: blue;
+}
+
+.showroom-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.showroom:hover .showroom-dropdown  {
+    display: block;
+    transition: all 0.2s ease-out;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    margin-right: .7em;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu a:link {
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+}
+
+a:active {
+    color: red;
+}
