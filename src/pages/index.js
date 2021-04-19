@@ -1,13 +1,13 @@
 import * as React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Carousel } from "react-bootstrap"
 import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
 
     <Carousel className="mt-3 mb-3">
       <Carousel.Item>

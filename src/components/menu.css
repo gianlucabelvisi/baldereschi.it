@@ -6,6 +6,11 @@
     color: red;
 }
 
+.normal * {
+    color: black;
+}
+
+
 .external * {
     color: blue;
 }
