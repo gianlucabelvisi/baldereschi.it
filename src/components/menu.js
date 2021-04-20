@@ -11,7 +11,7 @@ const Menu = () => {
           <Link to="/showroom" >Showroom</Link>
           <div className="showroom-dropdown">
             <div className="m-2">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=NcFi2BJ2mR"}}>
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=NcFi2BJ2mRf"}}>
                 Novelties S22-1 <strong>NEW</strong>
               </Link>
             </div>

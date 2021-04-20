@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
 
-      <main style={{display: 'flex'}}  className="justify-content-center">
+      <main style={{display: 'flex'}}  >
         {children}
       </main>
 
