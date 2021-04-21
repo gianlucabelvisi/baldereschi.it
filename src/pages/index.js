@@ -14,7 +14,7 @@ const IndexPage = ({data}) => (
       {data.allFile.edges.map(edge => {
         return (
           <Carousel.Item>
-            <GatsbyImage image={getImage(edge.node)}/>
+            <GatsbyImage image={getImage(edge.node)} alt="Slider"/>
           </Carousel.Item>
         )
       })}

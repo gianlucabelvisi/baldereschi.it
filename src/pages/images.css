@@ -6,10 +6,11 @@
 
 #work .thumb_proj a.proj{
     display: block;
-    position: relative;
+    /*position: relative;*/
     float: left;
     width: 100%;
 }
+
 
 .thumb_proj:hover, .gallery-item:hover .mask {
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -63,14 +64,26 @@
     opacity: 0.7;
 }
 
-
-#work .openproject{
+.zoomwrapper {
     position: relative;
-    float: left;
-    height: 0;
-    display: none;
-    overflow: hidden;
-    margin: 10px 0 0 0;
-    text-align: left;
 }
 
+.goback{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url(../images/close.png);
+    background-position: 0 0;
+    z-index: 1001;
+    width: 23px;
+    border: 0;
+    height: 23px;
+}
+
+.goback:hover{
+    background-position: 0 -23px;
+}
+
+.zoomwrapper .images * {
+    justify-content: end;
+}

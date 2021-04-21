@@ -5,7 +5,7 @@ import Menu from "./menu"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="mb-3">
 
     <div className="row">
       <div className="col-sm-12 col-md-12 col-lg-5">
