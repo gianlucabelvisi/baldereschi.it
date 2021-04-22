@@ -11,19 +11,21 @@ const Shearlings = () => {
     <Layout>
       <Seo title="Shearlings" />
 
-      <ImageThumb projectType="shearlings" projectRef="project01">
-        <StaticImage alt="More Info" src="../images/projects/shearlings/MERINOS/thumb.png" width="220" height="150"/>
-      </ImageThumb>
+      <div id="thumbcontainer">
 
-      <ImageThumb projectType="shearlings" projectRef="project02">
-        <StaticImage alt="More Info" src="../images/projects/shearlings/TOSCANA/thumb.png" width="220" height="150" />
-      </ImageThumb>
+        <ImageThumb projectType="shearlings" projectRef="project01">
+          <StaticImage alt="More Info" src="../images/projects/shearlings/MERINOS/thumb.png" width="220" height="150"/>
+        </ImageThumb>
 
-      <ImageThumb projectType="shearlings" projectRef="project03">
-        <StaticImage alt="More Info" src="../images/projects/shearlings/SPECIALTREATMENTS/thumb.png" width="220" height="150" />
-      </ImageThumb>
+        <ImageThumb projectType="shearlings" projectRef="project02">
+          <StaticImage alt="More Info" src="../images/projects/shearlings/TOSCANA/thumb.png" width="220" height="150" />
+        </ImageThumb>
 
+        <ImageThumb projectType="shearlings" projectRef="project03">
+          <StaticImage alt="More Info" src="../images/projects/shearlings/SPECIALTREATMENTS/thumb.png" width="220" height="150" />
+        </ImageThumb>
 
+      </div>
 
     </Layout>
   )

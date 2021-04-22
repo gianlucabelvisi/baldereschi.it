@@ -1,3 +1,15 @@
+
+#thumbcontainer {
+    max-width: 1000px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#work {
+    flex-shrink: 0;
+    margin: 10px;
+}
+
 #work .thumb_proj{
     position: relative;
     float: left;
@@ -85,4 +97,8 @@
 
 .zoomwrapper .images * {
     justify-content: end;
+}
+
+.slidecontent h3 {
+    text-transform: uppercase;
 }
