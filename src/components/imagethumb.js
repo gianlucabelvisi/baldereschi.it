@@ -3,11 +3,11 @@ import React from "react"
 import "../pages/images.css"
 import { Link } from "gatsby"
 
-const ImageThumb = ({children, thumbType, projectRef}) => {
+const ImageThumb = ({children, projectType, projectRef}) => {
   return (
     <div id="work" className="m-2">
       <div className="thumb_proj" id="project01">
-        <Link to="/zoom" state={{projectRef: projectRef}}>
+        <Link to="/zoom" state={{projectRef: projectRef, projectType: projectType}}>
           {children}
         </Link>
         <div className="mask">
