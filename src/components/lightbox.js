@@ -2,13 +2,20 @@ import React, { Component, Fragment } from "react"
 import PropTypes from "prop-types"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import styled from "styled-components"
-import { Dialog } from "@reach/dialog"
+import { DialogOverlay } from "@reach/dialog"
 import "@reach/dialog/styles.css"
+import media from "./media"
 
-const LightboxContainer = styled.div`
+export const LightboxContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  ${media.desktop`
+    grid-template-columns: repeat(4, 1fr);
+  `};
+  ${media.widescreen`
+    grid-template-columns: repeat(5, 1fr);
+  `};
 `
 const PreviewButton = styled.button`
   background: transparent;
@@ -33,6 +40,10 @@ export default class Lightbox extends Component {
   render() {
     const { images } = this.props
     const { selectedImage, showLightbox } = this.state
+
+    const open = (image) => this.setState({ showLightbox: true, selectedImage: image })
+    const close = () => this.setState({ showLightbox: false })
+
     return (
       <Fragment>
         <LightboxContainer>
@@ -41,7 +52,7 @@ export default class Lightbox extends Component {
               key={image.node}
               type="button"
               onClick={() =>
-                this.setState({ showLightbox: true, selectedImage: image })
+                this.setState(open(image))
               }
             >
               <GatsbyImage image={getImage(image.node)} alt="Slider"/>
@@ -50,12 +61,23 @@ export default class Lightbox extends Component {
         </LightboxContainer>
 
         {showLightbox && (
-          <Dialog>
-            <GatsbyImage image={getImage(selectedImage.node)} alt="Slider"/>
-            <button type="button" className="btn-primary" onClick={() => this.setState({ showLightbox: false })}>
-              Close
-            </button>
-          </Dialog>
+          <DialogOverlay style={{ background: "hsla(0, 100%, 100%, 0.9)",
+                                  position: "absolute",
+                                  marginLeft: "auto",
+                                  marginRight: "auto",
+                                  left: 0,
+                                  right: 0,
+                                  top: "4em",
+                                  textAlign: "center",
+                                  alignContent: "center"
+                                }}
+                         allowPinchZoom={true}
+                         onDismiss={close}>
+            <GatsbyImage image={getImage(selectedImage.node)} alt="Novelty"/>
+            {/*<button type="button" className="btn-primary" onClick={() => this.setState({ showLightbox: false })}>*/}
+            {/*  Close*/}
+            {/*</button>*/}
+          </DialogOverlay>
         )}
 
       </Fragment>
