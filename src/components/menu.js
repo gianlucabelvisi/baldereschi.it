@@ -8,7 +8,9 @@ const Menu = () => {
     <nav className="menu">
       <ul>
         <li className="showroom highlight">
-          <Link to="/showroom" >Showroom</Link>
+          <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=NcFi2BJ2mRf", password: "ss22collectionnov"}}>
+            Showroom
+          </Link>
           <div className="showroom-dropdown">
             <div className="m-2">
               <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=NcFi2BJ2mRf", password: "ss22collectionnov"}}>

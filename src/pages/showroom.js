@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,8 +7,7 @@ import Iframe from "react-iframe"
 import { Dialog } from "@reach/dialog"
 import { useForm } from "react-hook-form";
 
-function Showroom(props) {
-  // ss22collectionnov
+const Showroom = ({location}) => {
 
   const [showErrorDialog, setShowErrorDialog] = useState(false);
   const openError = () => setShowErrorDialog(true);
@@ -16,11 +15,9 @@ function Showroom(props) {
 
   const [revealShowroom, setRevealShowroom] = useState(false);
 
-  const [expectedPassword, setExpectedPassword] = useState(props.location.state.password)
-
-  const { register, errors, handleSubmit, watch } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = data => {
-    data.password === expectedPassword? setRevealShowroom(true) : openError()
+    data.password === location.state.password? setRevealShowroom(true) : openError()
   };
 
   return (
@@ -35,13 +32,12 @@ function Showroom(props) {
             className="form-control"
             type="password"
             name="password"
-            {
-              ...register("password")
-            }
+            {...register("password")}
+            style={{width: "20em"}}
           />
           <button
             type="submit"
-            className="btn btn-primary"
+            className="btn btn-primary mt-2"
             onClick={handleSubmit(onSubmit)}
           >
             Submit
@@ -61,7 +57,7 @@ function Showroom(props) {
                 allowFullScreen="true"
                 allow="xr-spatial-tracking; gyroscope; accelerometer"
                 scrolling="no"
-                url={props.location.state.targetUrl}>
+                url={location.state.targetUrl}>
         </Iframe>
       )}
     </Layout>
