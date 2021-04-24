@@ -11,17 +11,17 @@ const Menu = () => {
           <Link to="/showroom" >Showroom</Link>
           <div className="showroom-dropdown">
             <div className="m-2">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=NcFi2BJ2mRf"}}>
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=NcFi2BJ2mRf", password: "ss22collectionnov"}}>
                 Novelties S22-1 <strong>NEW</strong>
               </Link>
             </div>
             <div className="m-2">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=om1LkjadGcv"}}>
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=om1LkjadGcv", password: "ss22collectionnov"}}>
                 Novelties S22-2 <strong>NEW</strong>
               </Link>
             </div>
             <div className="m-2 normal">
-              <Link to="/showroom" state={{targetUrl: "https://kuula.co/share/collection/7PG5M?fs=1&vr=1&zoom=1&sd=1&initload=0&thumbs=3&chromeless=1&logo=-1"}}>
+              <Link to="/showroom" state={{targetUrl: "https://kuula.co/share/collection/7PG5M?fs=1&vr=1&zoom=1&sd=1&initload=0&thumbs=3&chromeless=1&logo=-1", password: "ss22collectionnov"}}>
                 Shearlings
               </Link>
             </div>
