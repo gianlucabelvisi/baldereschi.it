@@ -10,7 +10,6 @@
     color: black;
 }
 
-
 .external * {
     color: blue;
 }
@@ -39,10 +38,28 @@ li {
     margin-right: .7em;
 }
 
-nav a {
+nav a,
+.showroom-root {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+@media only screen
+and (device-width : 375px)
+and (device-height : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+    nav a,
+    .showroom-root {
+        font-size: 11px;
+    }
+    li {
+        margin-right: .4em;
+    }
+    ul {
+        padding: 0;
+    }
+
 }
 
 .menu a:link {

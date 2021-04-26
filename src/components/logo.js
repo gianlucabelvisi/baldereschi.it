@@ -7,6 +7,7 @@ const Logo = () => {
         src="../images/logo.png"
         formats={["AUTO", "WEBP", "AVIF"]}
         alt="Baldereschi.it"
+        loading="eager"
       />
   )
 }

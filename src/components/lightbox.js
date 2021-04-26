@@ -10,6 +10,8 @@ export const LightboxContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
   ${media.desktop`
     grid-template-columns: repeat(4, 1fr);
   `};
