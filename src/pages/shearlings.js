@@ -9,7 +9,7 @@ import styled from "styled-components"
 import media from "../components/media"
 
 
-export const ThumbContainer = styled.div`
+const ThumbContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
