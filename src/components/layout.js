@@ -30,14 +30,15 @@ const Layout = ({ children }) => {
 
       {children}
 
-      <footer style={{display: 'flex'}} className="justify-content-center mt-5">
-        <small>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-          {` `}
-          by Gianluca Belvisi
-        </small>
+      <footer className="justify-content-center mt-5">
+          <div className="col-12 text-center">
+            <small>
+              Baldereschi srl, via Canova, 24 56022 Castelfranco di Sotto (PI) – Italia – P.I. 02186340507
+              <br/>
+              <br/>
+              © {new Date().getFullYear()}, Website built with {` `} <a href="https://www.gatsbyjs.com">Gatsby</a> {` `} by Gianluca Belvisi
+            </small>
+          </div>
       </footer>
     </div>
   )

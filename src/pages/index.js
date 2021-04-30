@@ -32,7 +32,6 @@ query SliderImages {
         id
         childImageSharp {
           gatsbyImageData(
-            placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
         }

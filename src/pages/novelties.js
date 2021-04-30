@@ -23,7 +23,6 @@ query noveltiesImages {
         id
         childImageSharp {
           gatsbyImageData(
-            placeholder: BLURRED
             formats: [AUTO, WEBP, AVIF]
           )
         }
