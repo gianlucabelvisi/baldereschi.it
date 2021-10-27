@@ -13,6 +13,11 @@ const Menu = () => {
           </a>
           <div className="showroom-dropdown">
             <div className="m-2">
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=RrN4Sa1ARyC", password: "collectionFW2223"}}>
+                Shearlings FW22/23 <strong>NEW</strong>
+              </Link>
+            </div>
+            <div className="m-2">
               <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=bi3yFWUzvxd", password: "collectionFW2223"}}>
                 Novelties FW22/23-1 <strong>NEW</strong>
               </Link>
