@@ -11,35 +11,31 @@ const Menu = () => {
           <a href="#">
             Showroom
           </a>
+
           <div className="showroom-dropdown">
             <div className="m-2">
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=T8n8PQ13uit", password: "ss23collectionbalde"}}>
+                Spring Summer 23-1 <strong>NEW</strong>
+              </Link>
+            </div>
+            <div className="m-2">
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=reGHaDKQzrf", password: "ss23collectionbalde"}}>
+                Spring Summer 23-2 <strong>NEW</strong>
+              </Link>
+            </div>
+            <div className="m-2">
               <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=RrN4Sa1ARyC", password: "collectionFW2223"}}>
-                Shearlings FW22/23 <strong>NEW</strong>
+                Shearlings FW22/23
               </Link>
             </div>
             <div className="m-2">
               <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=bi3yFWUzvxd", password: "collectionFW2223"}}>
-                Novelties FW22/23-1 <strong>NEW</strong>
+                Novelties FW22/23-1
               </Link>
             </div>
             <div className="m-2">
               <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=LL2bqF3rmx5", password: "collectionFW2223"}}>
-                Novelties FW22/23-2 <strong>NEW</strong>
-              </Link>
-            </div>
-            <div className="m-2 normal">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=NcFi2BJ2mRf", password: "ss22collectionnov"}}>
-                Novelties S22-1
-              </Link>
-            </div>
-            <div className="m-2 normal">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=om1LkjadGcv", password: "ss22collectionnov"}}>
-                Novelties S22-2
-              </Link>
-            </div>
-            <div className="m-2 normal">
-              <Link to="/showroom" state={{targetUrl: "https://kuula.co/share/collection/7PG5M?fs=1&vr=1&zoom=1&sd=1&initload=0&thumbs=3&chromeless=1&logo=-1", password: "ss22collectionnov"}}>
-                Shearlings
+                Novelties FW22/23-2
               </Link>
             </div>
           </div>
