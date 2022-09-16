@@ -12,32 +12,39 @@ const Menu = () => {
             Showroom
           </a>
 
+
           <div className="showroom-dropdown">
+
+            <div className="m-2">
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=RELJaqqPiqD", password: "ss23collectionbalde"}}>
+                Leathers FW23/24-1<strong>NEW</strong>
+              </Link>
+            </div>
+
+            <div className="m-2">
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=CdU9aSdxMLc", password: "ss23collectionbalde"}}>
+                Leathers FW23/24-2<strong>NEW</strong>
+              </Link>
+            </div>
+
+            <div className="m-2">
+              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=9tfUkmrU1AR", password: "ss23collectionbalde"}}>
+                Shearlings FW23/24<strong>NEW</strong>
+              </Link>
+            </div>
+
             <div className="m-2">
               <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=T8n8PQ13uit", password: "ss23collectionbalde"}}>
-                Spring Summer 23-1 <strong>NEW</strong>
+                Spring Summer 23-1
               </Link>
             </div>
+
             <div className="m-2">
               <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=reGHaDKQzrf", password: "ss23collectionbalde"}}>
-                Spring Summer 23-2 <strong>NEW</strong>
+                Spring Summer 23-2
               </Link>
             </div>
-            <div className="m-2">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=RrN4Sa1ARyC", password: "collectionFW2223"}}>
-                Shearlings FW22/23
-              </Link>
-            </div>
-            <div className="m-2">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=bi3yFWUzvxd", password: "collectionFW2223"}}>
-                Novelties FW22/23-1
-              </Link>
-            </div>
-            <div className="m-2">
-              <Link to="/showroom" state={{targetUrl: "https://my.matterport.com/show/?m=LL2bqF3rmx5", password: "collectionFW2223"}}>
-                Novelties FW22/23-2
-              </Link>
-            </div>
+
           </div>
         </li>
         <li>
