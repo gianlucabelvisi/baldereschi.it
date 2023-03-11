@@ -3,7 +3,7 @@
 }
 
 .highlight * {
-    color: red;
+    color: #131313;
 }
 
 .normal * {
@@ -19,11 +19,11 @@
     position: absolute;
     background-color: white;
     min-width: 260px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-.showroom:hover .showroom-dropdown  {
+.showroom:hover .showroom-dropdown {
     display: block;
     transition: all 0.2s ease-out;
 }
@@ -36,7 +36,9 @@ ul {
 
 li {
     margin-right: .7em;
+    transition: all 0.4s ease-out;
 }
+
 
 nav a {
     color: black;
@@ -45,15 +47,17 @@ nav a {
 }
 
 @media only screen
-and (device-width : 375px)
-and (device-height : 812px)
-and (-webkit-device-pixel-ratio : 3) {
+and (device-width: 375px)
+and (device-height: 812px)
+and (-webkit-device-pixel-ratio: 3) {
     nav a {
         font-size: 11px;
     }
+
     li {
         margin-right: .4em;
     }
+
     ul {
         padding: 0;
     }
@@ -64,10 +68,17 @@ and (-webkit-device-pixel-ratio : 3) {
     color: black;
 }
 
+.menu .new {
+    color: red;
+    margin-left: 0.5em;
+}
+
 nav a:hover {
     color: red;
+    text-decoration: none;
 }
 
 a:active {
     color: red;
+    text-decoration: none;
 }

@@ -24,6 +24,8 @@ const Showroom = ({location}) => {
     <Layout>
       <Seo title="Showroom" />
 
+      <h4 className="mb-2">{location.state?.title}</h4>
+
       {!revealShowroom &&(
         <form onSubmit={e => e.preventDefault()}>
           <label htmlFor="password">Insert Password</label>
