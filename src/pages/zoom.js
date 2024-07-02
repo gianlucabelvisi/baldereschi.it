@@ -110,19 +110,43 @@ const Zoom = ({ location }) => {
         <div className="row">
           <Carousel className="images col-sm-12 col-md-8 col-lg-9">
             <Carousel.Item>
-              <StaticImage src="../images/projects/exotics/ALLIGATORS/1.png" alt="Alligators" />
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/1.jpg" alt="Alligators" />
             </Carousel.Item>
             <Carousel.Item>
-              <StaticImage src="../images/projects/exotics/ALLIGATORS/2.png" alt="Alligators" />
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/2.jpg" alt="Alligators" />
             </Carousel.Item>
             <Carousel.Item>
-              <StaticImage src="../images/projects/exotics/ALLIGATORS/3.png" alt="Alligators" />
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/3.jpg" alt="Alligators" />
             </Carousel.Item>
             <Carousel.Item>
-              <StaticImage src="../images/projects/exotics/ALLIGATORS/4.png" alt="Alligators" />
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/4.jpg" alt="Alligators" />
             </Carousel.Item>
             <Carousel.Item>
-              <StaticImage src="../images/projects/exotics/ALLIGATORS/5.png" alt="Alligators" />
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/5.jpg" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/6.jpg" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/7.jpg" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/8.jpg" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/old1.png" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/old2.png" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/old3.png" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/old4.png" alt="Alligators" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/ALLIGATORS/old5.png" alt="Alligators" />
             </Carousel.Item>
           </Carousel>
           <div className="slidecontent col-sm-12 col-md-4 col-lg-3">
@@ -141,6 +165,27 @@ const Zoom = ({ location }) => {
         {getProjectRef() === "project11" &&
         <div className="row">
           <Carousel className="images col-sm-12 col-md-8 col-lg-9">
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/LIZARDS/1.jpg" alt="Lizards" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/LIZARDS/2.jpg" alt="Lizards" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/LIZARDS/3.jpg" alt="Lizards" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/LIZARDS/4.jpg" alt="Lizards" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/LIZARDS/5.jpg" alt="Lizards" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/LIZARDS/6.jpg" alt="Lizards" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/exotics/LIZARDS/7.jpg" alt="Lizards" />
+            </Carousel.Item>
             <Carousel.Item>
               <StaticImage src="../images/projects/exotics/LIZARDS/1.png" alt="Lizards" />
             </Carousel.Item>

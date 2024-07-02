@@ -71,7 +71,7 @@ export default class Lightbox extends Component {
                                   right: 0,
                                   top: "4em",
                                   textAlign: "center",
-                                  alignContent: "center"
+                                  alignContent: "top"
                                 }}
                          allowPinchZoom={true}
                          onDismiss={close}>
