@@ -30,12 +30,20 @@ const Shearlings = () => {
 
       <ThumbContainer>
 
-        <ImageThumb projectType="shearlings" projectRef="project01">
-          <StaticImage alt="More Info" src="../images/projects/shearlings/MERINOS/thumb.png" width="220" height="150"/>
+        <ImageThumb projectType="shearlings" projectRef="project15">
+          <StaticImage alt="More Info" src="../images/projects/shearlings/AGNELLOFIXED/thumb.png" width="220" height="150" />
         </ImageThumb>
 
-        <ImageThumb projectType="shearlings" projectRef="project02">
-          <StaticImage alt="More Info" src="../images/projects/shearlings/TOSCANA/thumb.png" width="220" height="150" />
+        <ImageThumb projectType="shearlings" projectRef="project16">
+          <StaticImage alt="More Info" src="../images/projects/shearlings/AGNELLOSUEDE/thumb.png" width="220" height="150" />
+        </ImageThumb>
+
+        <ImageThumb projectType="shearlings" projectRef="project17">
+          <StaticImage alt="More Info" src="../images/projects/shearlings/MERINOFIXED/thumb.png" width="220" height="150"/>
+        </ImageThumb>
+
+        <ImageThumb projectType="shearlings" projectRef="project18">
+          <StaticImage alt="More Info" src="../images/projects/shearlings/MERINOSUEDE/thumb.png" width="220" height="150"/>
         </ImageThumb>
 
         <ImageThumb projectType="shearlings" projectRef="project03">

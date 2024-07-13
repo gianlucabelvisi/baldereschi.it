@@ -50,6 +50,48 @@ const Zoom = ({ location }) => {
             <Carousel.Item>
               <StaticImage src="../images/projects/shearlings/MERINOS/7.png" alt="Merinos" />
             </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/1.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/2.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/3.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/4.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/5.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/6.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/7.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/8.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/9.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/10.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/11.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/12.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/13.jpg" alt="Merinos" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/MERINOS/14.jpg" alt="Merinos" />
+            </Carousel.Item>
           </Carousel>
           <div className="slidecontent col-sm-12 col-md-4 col-lg-3">
             <h3>Shearlings<br /> <span>Merinos</span></h3>
@@ -94,6 +136,36 @@ const Zoom = ({ location }) => {
             </Carousel.Item>
             <Carousel.Item>
               <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/2.png" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/1.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/2.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/3.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/4.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/5.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/6.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/7.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/8.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/9.jpg" alt="Special Treatments" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <StaticImage src="../images/projects/shearlings/SPECIALTREATMENTS/10.jpg" alt="Special Treatments" />
             </Carousel.Item>
           </Carousel>
           <div className="slidecontent col-sm-12 col-md-4 col-lg-3">
@@ -345,6 +417,200 @@ const Zoom = ({ location }) => {
           </div>
         </div>
         }
+
+        {getProjectRef() === "project15" &&
+          <div className="row">
+            <Carousel className="images col-sm-12 col-md-8 col-lg-9">
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOFIXED/1.jpg" alt="Agnello Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOFIXED/2.jpg" alt="Agnello Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOFIXED/3.jpg" alt="Agnello Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOFIXED/4.jpg" alt="Agnello Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOFIXED/5.jpg" alt="Agnello Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOFIXED/6.jpg" alt="Agnello Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOFIXED/7.jpg" alt="Agnello Fixed" />
+              </Carousel.Item>
+            </Carousel>
+            <div className="slidecontent col-sm-12 col-md-4 col-lg-3">
+              <h3>Shearlings <br /> <span>Agnello Fixed</span></h3>
+              <small>
+                <p>Many types of finishing on the backside.</p>
+                <p>Lots of styles: Vintage, Nappa effect, printing, and foils.</p>
+                <p>Ask for your custom-made look.</p>
+              </small>
+            </div>
+          </div>
+        }
+
+
+        {getProjectRef() === "project16" &&
+          <div className="row">
+            <Carousel className="images col-sm-12 col-md-8 col-lg-9">
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOSUEDE/1.jpg" alt="Agnello Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOSUEDE/2.jpg" alt="Agnello Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOSUEDE/3.jpg" alt="Agnello Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOSUEDE/4.jpg" alt="Agnello Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOSUEDE/5.jpg" alt="Agnello Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOSUEDE/6.jpg" alt="Agnello Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/AGNELLOSUEDE/7.jpg" alt="Agnello Suede" />
+              </Carousel.Item>
+            </Carousel>
+            <div className="slidecontent col-sm-12 col-md-4 col-lg-3">
+              <h3>Shearlings <br /> <span>Agnello Suede</span></h3>
+              <small>
+                <p>Skins with a natural finishing on the backside, with a suede look and suede touch.</p>
+              </small>
+            </div>
+          </div>
+        }
+
+
+        {getProjectRef() === "project17" &&
+          <div className="row">
+            <Carousel className="images col-sm-12 col-md-8 col-lg-9">
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/01.jpg" alt="Merino Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/02.jpg" alt="Merino Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/03.jpg" alt="Merino Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/04.jpg" alt="Merino Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/05.jpg" alt="Merino Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/06.jpg" alt="Merino Fixed" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/07.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/08.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/09.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/10.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/11.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/12.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/13.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOFIXED/14.jpg" alt="" />
+              </Carousel.Item>
+            </Carousel>
+            <div className="slidecontent col-sm-12 col-md-4 col-lg-3">
+              <h3>Shearlings <br /> <span>Merino Fixed</span></h3>
+              <small>
+                <p>Many types of finishing on the backside.</p>
+                <p>Lots of styles: Vintage, Nappa effect, printing, and foils.</p>
+                <p>Ask for your custom-made look.</p>
+              </small>
+            </div>
+          </div>
+        }
+
+        {getProjectRef() === "project18" &&
+          <div className="row">
+            <Carousel className="images col-sm-12 col-md-8 col-lg-9">
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/01.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/02.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/03.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/04.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/05.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/06.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/07.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/08.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/09.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/10.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/11.jpg" alt="Merino Suede" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/12.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/13.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/14.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/15.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/16.jpg" alt="" />
+              </Carousel.Item>
+              <Carousel.Item>
+                <StaticImage src="../images/projects/shearlings/MERINOSUEDE/17.jpg" alt="" />
+              </Carousel.Item>
+            </Carousel>
+            <div className="slidecontent col-sm-12 col-md-4 col-lg-3">
+              <h3>Shearlings <br /> <span>Merino Suede</span></h3>
+              <small>
+                <p>Skins with a natural finishing on the backside, with a suede look and suede touch.</p>
+              </small>
+            </div>
+          </div>
+        }
+
 
       </div>
     </Layout>
