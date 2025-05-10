@@ -19,7 +19,7 @@ const About = () => {
             <Iframe width="100%"
                     height="400"
                     id="gmap_canvas"
-                    url="https://maps.google.com/maps?q=via%20canova%2024%2C%20castelfranco%20di%20sotto&t=&z=11&ie=UTF8&iwloc=&output=embed"
+                    url="https://maps.google.com/maps?q=via%20della%20pesa%2041%2C%20santa%20croce%20sullarno&t=&z=11&ie=UTF8&iwloc=&output=embed"
                     frameBorder="0"
                     scrolling="no"
                     marginHeight="0"

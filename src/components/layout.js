@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       <footer className="justify-content-center mt-5">
           <div className="col-12 text-center">
             <small>
-              Baldereschi srl, via Canova, 24 56022 Castelfranco di Sotto (PI) – Italia – P.I. 02186340507
+              Baldereschi srl, VIA DELLA PESA 41 Santa Croce sull’Arno (Pi) – Italia – P.I. 02186340507
               <br/>
               <br/>
               © {new Date().getFullYear()}, Website built with {` `} <a href="https://www.gatsbyjs.com">Gatsby</a> {` `} by Gianluca Belvisi
