@@ -1,5 +1,17 @@
 export const showRoomData = [
   {
+    title: "SS26/27",
+    link: "/ss26-27",
+    strong: true,
+    isPage: true
+  },
+  {
+    title: "FW25/26",
+    link: "/fw25-26",
+    strong: true,
+    isPage: true
+  },
+  {
     title: "SS25/26",
     link: "/ss25-26",
     strong: true,

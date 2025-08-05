@@ -92,13 +92,13 @@ const ImageGallery = ({ folderPath, title }) => {
   const [lightboxImage, setLightboxImage] = useState(null)
   const [lightboxOpen, setLightboxOpen] = useState(false)
 
-  // Optimized query that filters at GraphQL level
+  // Query all project images and filter in JavaScript
   const data = useStaticQuery(graphql`
-    query OptimizedImageGalleryQuery {
+    query FlexibleImageGalleryQuery {
       allFile(
         filter: { 
           extension: { regex: "/(jpg|jpeg|png)$/i" }
-          relativePath: { regex: "/projects\/SPRING SUMMER 25-26/" }
+          relativePath: { regex: "/projects\//" }
         }
         sort: { fields: [name], order: ASC }
       ) {
@@ -153,8 +153,16 @@ const ImageGallery = ({ folderPath, title }) => {
     setLightboxImage(null)
   }
 
-  // Group the filtered images
-  const groupedImages = groupImagesByFolder(data.allFile.nodes)
+  // Filter images based on folder path
+  const filterImagesByPath = (path) => {
+    return data.allFile.nodes.filter(node => 
+      node.relativePath.startsWith(`projects/${path}/`)
+    )
+  }
+
+  // Get and group images for the specified folder
+  const filteredImages = filterImagesByPath(folderPath)
+  const groupedImages = groupImagesByFolder(filteredImages)
 
   // Format folder name for display
   const formatFolderName = (folderName) => {

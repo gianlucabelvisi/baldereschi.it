@@ -11,7 +11,7 @@ const Menu = () => {
       <ul>
         <li className="showroom highlight">
           <span role="button" tabIndex={0}>
-            SHOWROOM
+            SEASONS
           </span>
 
           <div className="showroom-dropdown">
