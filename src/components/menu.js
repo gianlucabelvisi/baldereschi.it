@@ -10,19 +10,26 @@ const Menu = () => {
     <nav className="menu">
       <ul>
         <li className="showroom highlight">
-          <a href="#">
-            Showroom
-          </a>
+          <span role="button" tabIndex={0}>
+            SHOWROOM
+          </span>
 
           <div className="showroom-dropdown">
 
             {showRoomData.map((item, index) => {
               return (
-                <div className="m-2">
-                  <Link to="/showroom" state={{targetUrl: item.link, title: item.title}}>
-                    {item.title}
-                    {item.strong && <strong className="new">NEW</strong>}
-                  </Link>
+                <div className="m-2" key={index}>
+                  {item.isPage ? (
+                    <Link to={item.link}>
+                      {item.title}
+                      {item.strong && <strong className="new">NEW</strong>}
+                    </Link>
+                  ) : (
+                    <Link to="/showroom" state={{targetUrl: item.link, title: item.title}}>
+                      {item.title}
+                      {item.strong && <strong className="new">NEW</strong>}
+                    </Link>
+                  )}
                 </div>
               )
             })}

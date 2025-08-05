@@ -70,12 +70,15 @@
 }
 
 /* Special styling for different menu types */
+.menu .highlight span,
 .menu .highlight a {
     color: #2c3e50;
     font-weight: 600;
     position: relative;
+    cursor: pointer;
 }
 
+.menu .highlight span:hover,
 .menu .highlight a:hover {
     color: #444fc7;
     background-color: rgba(68, 79, 199, 0.08);

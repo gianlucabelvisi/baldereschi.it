@@ -393,3 +393,6 @@ npm run build    # Creates production build in /public
 ---
 
 This documentation provides a complete overview of the Baldereschi.it project, covering technical implementation, content management, and development workflows. The site showcases premium Italian leather craftsmanship through an elegant, performant web experience.
+
+---
+always ask me to run npm command from terminal.

@@ -6,6 +6,19 @@ import Seo from "../components/seo"
 import Iframe from "react-iframe"
 
 const Showroom = ({location}) => {
+  
+  // Handle case when no state is provided
+  if (!location.state?.targetUrl) {
+    return (
+      <Layout>
+        <Seo title="Showroom" />
+        <div className="container">
+          <h4 className="mb-4">Showroom</h4>
+          <p>No showroom selected. Please go back and select a showroom from the menu.</p>
+        </div>
+      </Layout>
+    )
+  }
 
   return (
     <Layout>

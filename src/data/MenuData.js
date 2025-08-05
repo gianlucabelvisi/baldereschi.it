@@ -1,5 +1,10 @@
 export const showRoomData = [
-
+  {
+    title: "SS25/26",
+    link: "/ss25-26",
+    strong: true,
+    isPage: true
+  },
   {
     title: "SHOWROOM Spring Summer 24-1",
     link: "https://my.matterport.com/show/?m=6oGtJZsNQyW",
