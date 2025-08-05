@@ -1,84 +1,330 @@
+/* Modern Menu Styling */
 .menu {
-    margin-top: 1em;
+    margin-top: 2rem;
+    font-family: 'Oxygen', "Arial", sans-serif;
 }
 
-.highlight * {
-    color: #131313;
+/* Main navigation list */
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
 }
 
-.normal * {
-    color: black;
+/* Navigation items */
+.menu li {
+    position: relative;
+    margin: 0;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
-.external * {
-    color: blue;
+/* Add hover delay for better UX */
+.showroom {
+    transition: all 0.3s ease;
 }
 
+.showroom .showroom-dropdown {
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    transition-delay: 0s;
+}
+
+.showroom:not(:hover) .showroom-dropdown {
+    transition-delay: 0.15s;
+}
+
+/* Base link styling */
+.menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Hover effects for main navigation */
+.menu a:hover {
+    color: #444fc7;
+    background-color: rgba(68, 79, 199, 0.05);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+/* Active state */
+.menu a:active {
+    color: #444fc7;
+    text-decoration: none;
+    transform: translateY(0);
+}
+
+/* Special styling for different menu types */
+.menu .highlight a {
+    color: #2c3e50;
+    font-weight: 600;
+    position: relative;
+}
+
+.menu .highlight a:hover {
+    color: #444fc7;
+    background-color: rgba(68, 79, 199, 0.08);
+}
+
+.menu .external a {
+    color: #5967ff;
+    border: 2px solid #5967ff;
+    background: transparent;
+    border-radius: 25px;
+    padding: 0.7rem 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.menu .external a:hover {
+    background: #5967ff;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(89, 103, 255, 0.25);
+}
+
+/* Enhanced Dropdown Styling */
 .showroom-dropdown {
     display: none;
     position: absolute;
-    background-color: white;
-    min-width: 260px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    min-width: 350px;
+    width: max-content;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.12),
+        0 8px 25px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    padding: 1.2rem 0;
+    margin-top: 0.4rem;
+    border: 1px solid rgba(68, 79, 199, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
-.showroom:hover .showroom-dropdown {
+/* Create a hover bridge to prevent dropdown from disappearing */
+.showroom-dropdown::before {
+    content: "";
+    position: absolute;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    height: 0.4rem;
+    background: transparent;
+}
+
+.showroom:hover .showroom-dropdown,
+.showroom-dropdown:hover {
     display: block;
-    transition: all 0.2s ease-out;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+/* Dropdown items */
+.showroom-dropdown .m-2 {
+    margin: 0 !important;
+    padding: 0;
 }
 
-li {
-    margin-right: .7em;
-    transition: all 0.4s ease-out;
+.showroom-dropdown a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #2c3e50;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 0;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+    white-space: nowrap;
 }
 
-
-nav a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
+.showroom-dropdown a:hover {
+    background: linear-gradient(90deg, rgba(68, 79, 199, 0.08) 0%, rgba(68, 79, 199, 0.03) 100%);
+    border-left-color: #444fc7;
+    color: #444fc7;
+    transform: translateX(6px);
+    padding-left: 2.25rem;
 }
 
-@media only screen
-and (device-width: 375px)
-and (device-height: 812px)
-and (-webkit-device-pixel-ratio: 3) {
-    nav a {
-        font-size: 11px;
-    }
-
-    li {
-        margin-right: .4em;
-    }
-
-    ul {
-        padding: 0;
-    }
-
-}
-
-.menu a:link {
-    color: black;
-}
-
+/* NEW badge styling */
 .menu .new {
-    color: red;
-    margin-left: 0.5em;
+    color: #e74c3c;
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-left: 0.6rem;
+    background: #fff5f5;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    border: 1px solid #fecaca;
 }
 
-nav a:hover {
-    color: red;
-    text-decoration: none;
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .menu ul {
+        gap: 1.2rem;
+    }
+    
+    .menu a {
+        font-size: 0.9rem;
+        padding: 0.7rem 1rem;
+        letter-spacing: 0.8px;
+    }
 }
 
-a:active {
-    color: red;
-    text-decoration: none;
+@media (max-width: 1200px) {
+    .menu ul {
+        gap: 1rem;
+    }
+    
+    .menu a {
+        font-size: 0.85rem;
+        padding: 0.6rem 0.8rem;
+        letter-spacing: 0.6px;
+    }
+    
+    .menu .external a {
+        margin-left: 0.5rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        margin-top: 1.5rem;
+    }
+    
+    .menu ul {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+    
+    .menu a {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.7rem;
+    }
+    
+    .showroom-dropdown {
+        min-width: 300px;
+        left: 0;
+        transform: none;
+    }
+    
+    .showroom:hover .showroom-dropdown,
+    .showroom-dropdown:hover {
+        transform: none;
+    }
+    
+    .menu .external a {
+        margin-left: 0;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu a {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+    }
+    
+    .showroom-dropdown {
+        position: static;
+        transform: none;
+        box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 0.5rem;
+        background: rgba(248, 249, 250, 0.95);
+    }
+    
+    .showroom-dropdown::before {
+        display: none;
+    }
+    
+    .showroom:hover .showroom-dropdown,
+    .showroom-dropdown:hover {
+        transform: none;
+    }
+    
+    .menu .external a {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 0.8rem;
+        padding: 0.8rem 0.5rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .showroom-dropdown a {
+        font-size: 0.85rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* iPhone X specific (keeping original specification) */
+@media only screen 
+and (device-width: 375px) 
+and (device-height: 812px) 
+and (-webkit-device-pixel-ratio: 3) {
+    .menu a {
+        font-size: 0.75rem;
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .menu a,
+    .menu li,
+    .showroom-dropdown {
+        transition: none;
+    }
+}
+
+/* Focus states for keyboard navigation */
+.menu a:focus {
+    outline: 2px solid #444fc7;
+    outline-offset: 2px;
+    background-color: rgba(68, 79, 199, 0.1);
+}
+
+.showroom-dropdown a:focus {
+    background: rgba(68, 79, 199, 0.15);
+    color: #444fc7;
+    outline: 2px solid #444fc7;
+    outline-offset: -2px;
 }
