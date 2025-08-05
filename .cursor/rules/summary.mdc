@@ -1,0 +1,395 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Baldereschi.it - Premium Leather & Exotic Skins Website
+
+## 📋 Project Overview
+
+**Baldereschi.it** is a sophisticated Gatsby-powered showcase website for Baldereschi srl, a premium Italian leather and exotic skins manufacturer based in Santa Croce sull'Arno, Tuscany. The website serves as an elegant digital catalog displaying their luxury collections including shearlings, exotic leathers, and innovative leather treatments.
+
+### 🏢 Company Information
+- **Company**: Baldereschi srl  
+- **Location**: VIA DELLA PESA 41, Santa Croce sull'Arno (Pi) – Italia  
+- **Tax ID**: P.I. 02186340507  
+- **Industry**: Premium leather goods, exotic skins, shearlings
+
+---
+
+## 🛠 Technical Stack
+
+### Core Technologies
+- **Framework**: Gatsby v3.2.1 (React-based static site generator)
+- **Runtime**: Node.js (**Required: v16.1** - use `nvm use 16.1`)
+- **Language**: JavaScript (ES6+)
+- **Styling**: SCSS + Styled Components + Bootstrap 4.6.0
+- **Image Processing**: Gatsby Image with Sharp (optimized WebP/AVIF support)
+
+### Key Dependencies
+- **React**: v17.0.1 with React DOM
+- **UI Components**: React Bootstrap v1.5.2
+- **Styling**: 
+  - Styled Components v5.2.3
+  - Bootstrap v4.6.0 (customized)
+  - Sass preprocessing
+- **Image Handling**: 
+  - gatsby-plugin-image v1.3.1
+  - gatsby-plugin-sharp v3.3.1
+  - gatsby-transformer-sharp v3.3.0
+- **Interactive Elements**:
+  - @reach/dialog v0.15.0 (accessible modals)
+  - react-hook-form v7.3.0 (contact forms)
+  - react-iframe v1.8.0 (3D showrooms)
+- **SEO & Performance**:
+  - gatsby-plugin-react-helmet v4.2.0
+  - gatsby-plugin-manifest v3.2.0
+  - gatsby-plugin-offline v4.2.0 (PWA ready)
+
+---
+
+## 🏗 Project Structure
+
+```
+baldereschi.it/
+├── src/
+│   ├── components/          # Reusable React components
+│   │   ├── header.js       # Site header with logo & navigation
+│   │   ├── menu.js         # Main navigation menu
+│   │   ├── layout.js       # Page layout wrapper
+│   │   ├── lightbox.js     # Image gallery lightbox
+│   │   ├── imagethumb.js   # Thumbnail component
+│   │   ├── logo.js         # Company logo component
+│   │   ├── seo.js          # SEO meta tags
+│   │   ├── media.js        # Responsive breakpoints
+│   │   ├── utils.js        # Utility functions
+│   │   └── *.css/scss      # Component styles
+│   ├── pages/              # Route pages
+│   │   ├── index.js        # Homepage with carousel
+│   │   ├── shearlings.js   # Shearling collections
+│   │   ├── exotics.js      # Exotic leather gallery
+│   │   ├── novelties.js    # Latest products
+│   │   ├── showroom.js     # 3D virtual showrooms
+│   │   ├── about.js        # Contact & company info
+│   │   ├── zoom.js         # Detailed product viewer
+│   │   └── 404.js          # Error page
+│   ├── data/
+│   │   └── MenuData.js     # Navigation configuration
+│   └── images/             # Static assets
+│       ├── projects/       # Product image collections
+│       │   ├── slider/     # Homepage carousel
+│       │   ├── shearlings/ # Shearling products
+│       │   ├── exotics/    # Exotic leather products
+│       │   ├── novelties/  # New products
+│       │   └── seasonal/   # Collection seasons
+│       └── *.png           # Icons, logos, UI elements
+├── gatsby-*.js             # Gatsby configuration files
+└── package.json            # Dependencies & scripts
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js v16.1** (exactly - use nvm)
+- npm or yarn package manager
+- Git
+
+### Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd baldereschi.it
+```
+
+2. **Set correct Node version** ⚠️ **IMPORTANT**
+```bash
+nvm use 16.1
+# If not installed: nvm install 16.1
+```
+
+3. **Install dependencies**
+```bash
+npm install
+```
+
+4. **Start development server**
+```bash
+npm run develop
+# or
+gatsby develop
+```
+
+5. **Access the site**
+- Development: `http://localhost:8000`
+- GraphQL explorer: `http://localhost:8000/___graphql`
+
+### Available Scripts
+```bash
+npm run develop    # Start development server
+npm run build      # Build for production
+npm run serve      # Preview production build
+npm run clean      # Clear Gatsby cache
+npm run format     # Format code with Prettier
+```
+
+---
+
+## 🎨 Features & Functionality
+
+### 🏠 Homepage
+- **Hero Carousel**: Rotating showcase of featured products from `/images/projects/slider/`
+- **Responsive Design**: Mobile-first with Bootstrap grid system
+- **Optimized Images**: WebP/AVIF format with lazy loading
+
+### 🧭 Navigation System
+- **Dynamic Menu**: Configuration-driven navigation in `MenuData.js`
+- **Dropdown Showrooms**: Password-protected 3D Matterport virtual tours
+- **External Links**: Integration with external color card system
+- **Responsive**: Collapsible mobile navigation
+
+### 📸 Product Galleries
+
+#### Shearlings Collection (`/shearlings`)
+Product categories with thumbnail grid:
+- **Merinos** - Various wool treatments (curly, semi-curly, ironed)
+- **Agnello Fixed** - Custom backside finishings
+- **Agnello Suede** - Natural suede finish
+- **Merino Fixed** - Premium treatments
+- **Merino Suede** - Natural finishing
+- **Toscana** - Traditional Tuscan shearlings
+- **Special Treatments** - Custom finishes, printing, embossing
+
+#### Exotic Leathers (`/exotics`)
+Premium exotic skin collection:
+- **Alligators** (Alligator Mississipiensis) - CITES certified
+- **Lizards** (Varanus Salvator) - Indonesian origin
+- **Python Molurus** (Python Bivittatus) - Various cuts
+- **Python Reticulatus** - Premium python skins
+- **No-CITES Snakes** - Ayers, Elaphe, Karung varieties
+
+#### Novelties (`/novelties`)
+- **Dynamic Gallery**: Auto-populated from `/images/projects/novelties/`
+- **Lightbox Viewing**: Full-screen image viewer with zoom
+- **Latest Products**: Newest leather innovations and treatments
+
+### 🏢 Virtual Showrooms (`/showroom`)
+- **3D Tours**: Immersive Matterport experiences
+- **Password Protection**: Secure access for different collections
+- **Seasonal Collections**: Spring/Summer and Fall/Winter catalogs
+- **Fullscreen Experience**: Complete virtual showroom navigation
+
+### 📱 Image Viewing System
+- **Thumbnail Grid**: Responsive layout (2-5 columns based on screen size)
+- **Detailed Zoom**: Full carousel view with product specifications
+- **Lightbox Gallery**: Modal viewing with pinch-to-zoom support
+- **Optimized Loading**: Progressive image enhancement
+
+### 📞 Contact & About (`/about`)
+- **Contact Form**: Powered by GetForm.io integration
+- **Interactive Map**: Google Maps embed for location
+- **Company Information**: Full business details and contact methods
+
+---
+
+## 🎯 Responsive Design System
+
+### Breakpoints (defined in `media.js`)
+```javascript
+const sizes = {
+  tablet: 768px,    // Mobile → Tablet
+  desktop: 1024px,  // Tablet → Desktop  
+  widescreen: 1366px, // Desktop → Wide
+  uhd: 1980px       // Wide → Ultra HD
+}
+```
+
+### Grid System
+- **Mobile**: 2-column product grid
+- **Desktop**: 4-column layout
+- **Widescreen**: 5-column display
+- **Bootstrap Integration**: Responsive classes throughout
+
+---
+
+## 🎨 Styling Architecture
+
+### Design System
+- **Primary Color**: `#444fc7` (deep blue)
+- **Secondary Color**: `#5967ff` (bright blue)
+- **Typography**: 'Oxygen' font family (Google Fonts)
+- **Framework**: Bootstrap 4.6.0 with custom SCSS overrides
+
+### Component Styling
+- **Styled Components**: Dynamic CSS-in-JS for complex components
+- **SCSS**: Traditional stylesheets for base styling
+- **CSS Modules**: Scoped styling for specific components
+- **Bootstrap Classes**: Utility-first responsive classes
+
+---
+
+## 📁 Content Management
+
+### Image Organization
+```
+src/images/projects/
+├── slider/              # Homepage carousel images
+├── shearlings/          # Shearling product categories
+│   ├── MERINOS/        # Individual product folders
+│   ├── AGNELLOFIXED/   # with numbered images
+│   └── [category]/thumb.png # Thumbnail for each category
+├── exotics/            # Exotic leather categories  
+├── novelties/          # Latest product releases
+└── seasonal/           # Seasonal collections
+    ├── SPRING SUMMER 25-26/
+    ├── FALL WINTER 25-26/
+    └── SPRING SUMMER 26-27/
+```
+
+### Adding New Products
+1. Create category folder in appropriate section
+2. Add numbered product images (1.jpg, 2.jpg, etc.)
+3. Include `thumb.png` for grid display
+4. Update relevant page component if needed
+
+### Showroom Management
+Edit `src/data/MenuData.js` to add/modify virtual showrooms:
+```javascript
+{
+  title: "Collection Name",
+  link: "https://my.matterport.com/show/?m=XXXXXX",
+  pwd: "access-password",
+  strong: true // Shows "NEW" badge
+}
+```
+
+---
+
+## ⚡ Performance Optimizations
+
+### Image Processing
+- **Gatsby Image**: Automatic WebP/AVIF conversion
+- **Responsive Images**: Multiple sizes generated automatically  
+- **Lazy Loading**: Images load as they enter viewport
+- **Sharp Processing**: High-quality image optimization
+
+### Build Optimizations
+- **Static Generation**: Pre-built pages for fast loading
+- **Code Splitting**: Automatic bundle optimization
+- **PWA Ready**: Offline functionality available
+- **SEO Optimization**: Meta tags and structured data
+
+---
+
+## 🚀 Deployment
+
+### Build Process
+```bash
+npm run build    # Creates production build in /public
+```
+
+### Hosting Recommendations
+- **Netlify**: Automatic deployments from Git
+- **Vercel**: Optimized for Gatsby sites
+- **AWS S3 + CloudFront**: Custom CDN setup
+- **GitHub Pages**: Free hosting option
+
+### Environment Variables
+- Contact form endpoint (GetForm.io)
+- Google Maps API key (if customizing map)
+- Analytics tracking codes
+
+---
+
+## 🔧 Development Notes
+
+### Node Version Requirement
+⚠️ **CRITICAL**: This project requires **Node.js v16.1** exactly
+- Use `nvm use 16.1` before any development
+- Gatsby v3.2.1 has specific Node.js compatibility requirements
+- Newer Node versions may cause build failures
+
+### Common Development Tasks
+
+#### Adding New Page
+1. Create component in `src/pages/`
+2. Add navigation link in `menu.js`
+3. Update `MenuData.js` if needed
+4. Add SEO component for meta tags
+
+#### Modifying Styles
+- Global styles: `src/components/layout.scss`
+- Component styles: Individual `.css` files
+- Responsive utilities: `src/components/media.js`
+- Bootstrap customization: SCSS variables in layout.scss
+
+#### Image Management
+- Always optimize images before adding
+- Use consistent naming (numbered sequences)
+- Include thumbnails for gallery pages
+- Test responsive display across devices
+
+---
+
+## 🤝 Contributing
+
+### Code Style
+- **Prettier**: Automated code formatting
+- **ES6+**: Modern JavaScript features
+- **Component Structure**: Functional components with hooks
+- **File Naming**: kebab-case for files, PascalCase for components
+
+### Git Workflow
+1. Create feature branches from `master`
+2. Make focused, atomic commits
+3. Test thoroughly before merging
+4. Keep commit messages descriptive
+
+---
+
+## 📋 Cursor Rules & Development Guidelines
+
+### Essential Setup
+- **Always use Node.js v16.1**: Run `nvm use 16.1` before development
+- **Install dependencies**: `npm install` after Node version switch
+- **Development server**: `npm run develop` for local testing
+
+### File Organization
+- Components in `/src/components/` with co-located styles
+- Pages in `/src/pages/` following URL structure  
+- Images organized by product category in `/src/images/projects/`
+- Shared data in `/src/data/` for configuration
+
+### Code Standards
+- Use functional React components with hooks
+- Implement responsive design with `media.js` breakpoints
+- Optimize images through Gatsby Image pipeline
+- Follow Bootstrap grid system for layouts
+- Include proper SEO tags on all pages
+
+### Testing Checklist
+- [ ] Test responsive behavior on all breakpoints
+- [ ] Verify image loading and optimization
+- [ ] Check navigation and routing
+- [ ] Validate contact form functionality
+- [ ] Test virtual showroom access
+- [ ] Confirm SEO meta tags
+
+### Performance Guidelines
+- Use Gatsby Image for all product photos
+- Implement lazy loading for image galleries  
+- Minimize bundle size with code splitting
+- Optimize SCSS compilation
+- Enable PWA features for offline access
+
+### Content Updates
+- Add new products by creating organized image folders
+- Update `MenuData.js` for showroom modifications
+- Maintain consistent image naming conventions
+- Test image quality across devices before committing
+
+---
+
+This documentation provides a complete overview of the Baldereschi.it project, covering technical implementation, content management, and development workflows. The site showcases premium Italian leather craftsmanship through an elegant, performant web experience.
