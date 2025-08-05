@@ -19,7 +19,7 @@ const Menu = () => {
             {showRoomData.map((item, index) => {
               return (
                 <div className="m-2">
-                  <Link to="/showroom" state={{targetUrl: item.link, password: item.pwd, title: item.title}}>
+                  <Link to="/showroom" state={{targetUrl: item.link, title: item.title}}>
                     {item.title}
                     {item.strong && <strong className="new">NEW</strong>}
                   </Link>
