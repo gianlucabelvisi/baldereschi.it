@@ -10,7 +10,7 @@ const IndexPage = ({data}) => (
   <Layout>
     <Seo title="Home" />
 
-    <Carousel className="mt-3 mb-3">
+    <Carousel className="mt-3 mb-3" interval={5000} fade>
       {data.allFile.edges.map(edge => {
         return (
           <Carousel.Item>

@@ -5,10 +5,10 @@ import Menu from "./menu"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <header className="mb-3">
+  <header className="mb-3" role="banner">
 
     <div className="row">
-      <div className="col-sm-12 col-md-12 col-lg-5">
+      <div className="col-sm-12 col-md-12 col-lg-5 d-flex align-items-center">
         <Link to="/"><Logo/></Link>
       </div>
       <div className="col-sm-12 col-md-12 col-lg-7">

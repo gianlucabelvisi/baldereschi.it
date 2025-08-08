@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const ImageThumb = ({children, projectType, projectRef}) => {
   return (
     <div id="work" className="thumb">
-      <div className="thumb_proj" id="project01">
+      <div className="thumb_proj" id="project01" role="link" aria-label="Open gallery">
         <Link to="/zoom" state={{projectRef: projectRef, projectType: projectType}}>
           {children}
         </Link>
